@@ -31,5 +31,233 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	font-family: 'Lora', serif;
+	color: black;
 }
+
+h1,
+h2,
+h3 {
+	font-family: 'Playfair Display', serif;
+}
+h1 {
+	font-size: 52px;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 36px;
+	color: #3e606b;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 18px;
+	color: #3e606b	;
+}
+
+.blok {
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* -- Hlavička -- */
+
+.hlavicka {
+	display: flex;
+	margin: 30px auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {	
+	width: 170px;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu a {
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+.menu a:hover {
+	background-color: #f195b2;
+	color: white;
+	border-radius: 20px;
+}
+
+/* -- Hero sekce s obrázkem a hlavním nadpisem -- */
+
+.pozadiobrazek {
+	background-image: url("/images/cupcake.jpg");
+	background-color: black;
+	background-size: cover;
+}
+.herosekce {
+	color: white;
+	padding: 80px 0;
+}
+
+.herosekce p {
+	width: 60%;
+	font-size: 24px;
+	font-style: italic;
+}
+
+.herosekce h1 {
+	width: 60%;	
+}
+
+/* -- sekce Vítejte v naší cukrárně -- */
+
+.pozadityrkys {
+	background-color: rgb(144, 242, 232);
+}
+
+.uvitani {
+	display: flex;
+	padding: 80px 0;
+	align-content: stretch;
+	max-width: 1100px;
+}
+
+.levysloupec,
+.pravysloupec {
+	flex: 0 0 50%;
+}
+
+.pravysloupec {
+	background-color: white;
+}
+
+.pravysloupec img {
+	border-radius: 5px;
+}
+
+.levysloupec {
+	background-color: white;
+	padding: 20px 30px 30px 10px;
+}
+
+.posledni {
+	margin-bottom: 0;
+	padding-bottom: 30px;
+}
+
+.levysloupec a {
+	text-decoration: none;
+	padding: 15px 40px;
+	color: white;
+	background-color: #d2567d;
+	border-radius: 30px;
+	margin: 30px;
+}
+
+.levysloupec a:hover {
+	background-color: #f195b2;
+	color: white;
+	border-radius: 20px;
+}
+
+.cukrarka img {
+	width: 100%;
+	padding: 5px;
+	vertical-align: bottom;
+	border-radius: 10px;
+}
+
+/* -- sekce Dnešní nabídka -- */
+
+.pozadisede {
+	background-color: #f0f0f0;
+	padding: 80px;
+}
+
+.produkty {
+	display: flex;
+	align-items: center;
+	max-width: 1100px;
+	justify-content: space-between;
+}
+
+.produkty h3,
+.produkty p {
+	background-color: white;
+}
+
+.produkty p {
+	margin: 0;
+	padding: 0 20px 20px 20px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.produkty h3 {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+.produkt1,
+.produkt2,
+.produkt3,
+.produkt4 {
+	flex-basis: calc((100% - 90px) / 4) ;
+	flex-grow: 0;
+}
+
+.produkt1 img,
+.produkt2 img,
+.produkt3 img,
+.produkt4 img {
+	max-width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	vertical-align: bottom;
+}
+
+/* -- sekce Náš přístup k pečení -- */
+
+.pristuppeceni {
+	display: flex;
+	padding: 80px 0;
+	align-content: stretch;
+}
+
+.levypristup,
+.pravypristup {
+	flex: 0 0 50%;
+}
+
+.levypristup img {
+	width: 100%;
+	border-radius: 5px;
+	vertical-align: bottom;
+}
+
+.pravypristup {
+	padding-left: 30px;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer {
+	padding:30px;
+	text-align: center;
+	background-color: #303339;
+	color: white;
+}
+
+
 
